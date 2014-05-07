@@ -20,7 +20,7 @@ casper.thenOpen('https://cis.nordakademie.de/pruefungsamt/pruefungsergebnisse/?n
 	if (fs.exists(path) && fs.read(path) < count){
 		//new mark
 		this.echo('New Mark');
-		casper.open(url + "?empfaenger=" + email).then(function() {
+		casper.open(url + "?empfaenger=" + email + "&api_key=" + api_key).then(function() {
 			this.echo('Sent Mail.');
 		});
 		//write new count	
