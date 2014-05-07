@@ -1,2 +1,4 @@
-var user = "MatNr";
-var password =  "Passwort";
+var user = "test";
+var password =  "test";
+var url = "http://test/mail.php";
+var email = "test@test.com";
